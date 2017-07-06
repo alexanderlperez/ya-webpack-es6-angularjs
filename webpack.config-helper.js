@@ -28,7 +28,7 @@ module.exports = (options) => {
                 }
             }),
             new HtmlWebpackPlugin({
-                template: './src/index.html'
+                template: './src/index.ejs' // HtmlWebpackPlugin has EJS compilation built in
             }),
             new Webpack.ProvidePlugin({ 
                 // bootstrap 3 dependencies
